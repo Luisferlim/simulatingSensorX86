@@ -1,0 +1,1 @@
+cmd_/home/luissilva/sysemb/linuxemb/initramfs/x86-busybox/root/modules/device_temp/Module.symvers := sed 's/\.ko$$/\.o/' /home/luissilva/sysemb/linuxemb/initramfs/x86-busybox/root/modules/device_temp/modules.order | scripts/mod/modpost -m  -E -o /home/luissilva/sysemb/linuxemb/initramfs/x86-busybox/root/modules/device_temp/Module.symvers -e -i Module.symvers   -T -

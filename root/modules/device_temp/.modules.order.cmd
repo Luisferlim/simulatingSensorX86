@@ -1,0 +1,1 @@
+cmd_/home/luissilva/sysemb/linuxemb/initramfs/x86-busybox/root/modules/device_temp/modules.order := {   echo /home/luissilva/sysemb/linuxemb/initramfs/x86-busybox/root/modules/device_temp/driver_sensor.ko; :; } | awk '!x[$$0]++' - > /home/luissilva/sysemb/linuxemb/initramfs/x86-busybox/root/modules/device_temp/modules.order
