@@ -1,0 +1,17 @@
+#!/bin/sh
+
+mount -t proc none /proc
+mount -t sysfs none /sys
+mount -t debugfs none /sys/kernel/debug
+
+echo -e "\nBoot took $(cut -d' ' -f1 /proc/uptime) seconds\n"
+
+/bin/sleep 2
+/usr/bin/clear
+/root/lg
+
+echo "rodando mdev scan to devices"
+mdev -s
+
+
+exec /bin/sh
